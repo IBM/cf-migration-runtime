@@ -36,6 +36,7 @@ func NewCliClient(cliConn plugin.CliConnection) *CliClient {
 	}
 }
 
+// GetAppGUID method fetches the GUID for specified app
 func (cliClient *CliClient) GetAppGUID(appName string) (string, error) {
 	appModel, err := cliClient.GetApp(appName)
 	if err != nil {
