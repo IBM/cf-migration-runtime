@@ -37,7 +37,7 @@ func NewCliClient(cliConn plugin.CliConnection) *CliClient {
 }
 
 func (cliClient *CliClient) GetAppGUID(appName string) (string, error) {
-	appModel, err := cliClient.GetApp(appName)
+	appModel, err := cliClient.CliConnection.GetApp(appName)
 	if err != nil {
 		if err.Error() == fmt.Sprintf("App %s not found", appName) {
 			return "", &AppNotFoundError{
