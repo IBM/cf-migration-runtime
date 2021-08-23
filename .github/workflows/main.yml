@@ -59,7 +59,7 @@ jobs:
         echo "GOPATH=$GITHUB_WORKSPACE/go" >> $GITHUB_ENV
         echo "GOBIN=$GITHUB_WORKSPACE/go/bin" >> $GITHUB_ENV
         echo "GITHUB_WORK_DIR=./go/src/github.com/${{ github.repository }}" >> $GITHUB_ENV
-        echo "PLUGIN_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')" >> $GITHUB_ENV
+        echo "PLUGIN_NAME=cfmr-cf-cli-plugin-network-policy" >> $GITHUB_ENV
         echo "PATH=$GITHUB_WORKSPACE/go/bin:$PATH" >> $GITHUB_ENV        
         
     - name: Checkout Code
@@ -69,7 +69,7 @@ jobs:
         path: ${{ env.GITHUB_WORK_DIR }}      
    
     - name: Build Code
-      working-directory: ${{ env.GITHUB_WORK_DIR }}
+      working-directory: ${{ env.GITHUB_WORK_DIR/env.PLUGIN_NAME }}
       run: make build
       
     # https://github.com/svenstaro/upload-release-action  
