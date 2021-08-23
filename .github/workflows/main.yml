@@ -7,11 +7,13 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
+    paths:
+    - 'cfmr-cf-cli-plugin-network-policy/**'
   pull_request:
     branches: [ main ]
-  paths:
+    paths:
     - 'cfmr-cf-cli-plugin-network-policy/**'
- 
+    
 jobs:
   # This workflow contains a single job called "build"
   lint:
