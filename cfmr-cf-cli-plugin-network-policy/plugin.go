@@ -153,7 +153,7 @@ func validateAndPopulatePortAndProtocol(port string, protocol string, ca *Comman
 	}
 }
 
-func createNetworkPolicy(cliClient client.CliClient, ca CommandArgs) {
+func createNetworkPolicy(cliClient *client.CliClient, ca CommandArgs) {
 	fmt.Println("Fetching GUID for", ca.sourceApp, "app")
 	sourceGUID, err := cliClient.GetAppGUID(ca.sourceApp)
 	if err != nil {
