@@ -20,18 +20,18 @@ cf service-access -b cfmr-broker
 
 2. Use below command to install the plugins
 
-```bash
-cf install-plugin -f https://github.com/IBM/cf-migration-runtime/releases/download/v1.0.0/cfmr-cf-cli-plugin-network-policy-linux-amd64
-```
+    ```bash
+    cf install-plugin -f https://github.com/IBM/cf-migration-runtime/releases/download/v1.0.0/cfmr-cf-cli-plugin-network-policy-linux-amd64
+    ```
 
 3. Use below command to verify if plugin has been installed
 
-```bash
-cf plugins
-```
+    ```bash
+    cf plugins
+    ```
 
 4. Use below command to see the plugin help
 
-```bash
-cf add-cfmr-network-policy --help
-```
+    ```bash
+    cf add-cfmr-network-policy --help
+    ```
