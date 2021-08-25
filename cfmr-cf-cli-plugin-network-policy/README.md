@@ -12,10 +12,10 @@ Please make sure `network-policy` service is available in cfmr broker offerings
 1. Go to `https://github.com/IBM/cf-migration-runtime/releases` and get URL of the plugin version you want to install
 
 2. Use below command to install the plugin
-- `cf install-plugin -f https://github.com/IBM/cf-migration-runtime/releases/download/v1.0.0/cfmr-cf-cli-plugin-network-policy-linux-amd64`
+   - `cf install-plugin -f https://github.com/IBM/cf-migration-runtime/releases/download/v1.0.0/cfmr-cf-cli-plugin-network-policy-linux-amd64`
 
 3. Use below command to verify if plugin has been installed
-- `cf plugins`
+   - `cf plugins`
 
 4. Use below command to see the plugin help
-- `cf add-cfmr-network-policy --help`
+   - `cf add-cfmr-network-policy --help`
