@@ -1,5 +1,6 @@
 # cf-migration-runtime
 Repository for storage of public assets for customers and prospects
 
-## CF CLI Plugin Network Policy
-This plugin enables App to App direct communication in CFMR. Follow the [documentation](/cfmr-cf-cli-plugin-network-policy/README.md) for plugin installation and its use
+## Container to Container Networking Plugin
+Follow instructions for using plugin [cfmr-cf-cli-plugin-network-policy](/cfmr-cf-cli-plugin-network-policy/README.md)
+- The Plugin will create policy to allow direct network traffic from one app to another
