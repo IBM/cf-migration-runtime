@@ -40,7 +40,7 @@ cf service-access -b cfmr-broker
     cf add-cfmr-network-policy frontend --destination-app backend --port 7007,7008,9003,9004 --protocol tcp,tcp,udp,udp
 
 5. Verify if service instance has been created
-   
+
    ```bash  
    cf service <SOURCE-APP>-<DESTINATION-APP>
    ```
